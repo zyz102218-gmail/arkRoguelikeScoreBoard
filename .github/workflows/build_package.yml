@@ -1,7 +1,9 @@
 name: Build package
 
-on: [push]
-
+on: 
+  push:
+    tags: 
+      -"v*"
 jobs:
   build:
 
@@ -25,11 +27,24 @@ jobs:
           name: windows_x64
           path: src/dist
       - name: Upload to release
-        uses: JasonEtco/upload-to-release@master
-        with:
-          args: dist/arkRoguelikeScoreBoard.exe
+        uses: actions/create-release@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+            tag_name: ${{ github.ref }}
+            release_name: Release ${{ github.ref }}
+            body: TODO New Release.
+            draft: false
+            prerelease: false
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: dist/arkRoguelikeScoreBoard.exe
+          asset_name: ${{ secrets.ReleaseZipName }}.exe
+          asset_content_type: application/exe
 #      - name: Setup Python
 #        uses: actions/setup-python@v4
 #        with:
