@@ -408,7 +408,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             QMessageBox.critical(self,"错误","昵称不能为空",QMessageBox.Ok)
             return
         # 详细记录
-        with open("rogue_log.txt", 'a') as f:
+        with open("../rogue_log.txt", 'a') as f:
             f.write("------------------------------------\n")
             f.write("完赛时间：{}\n".format(save_time))
             f.write("选手学校：{}\n".format(school))
@@ -431,7 +431,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 f.write("{}\t {}\t {}\t {}\n".format(act.time,act.name,act.small_score,act.description))
             f.close()
         # 精简记录
-        with open("rogue_fine.txt",'a') as f:
+        with open("../rogue_fine.txt", 'a') as f:
             f.write("------------------------------------\n")
             f.write("完赛时间：{}\n".format(save_time))
             f.write("选手学校：{}\n".format(school))
@@ -440,8 +440,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             f.write("完赛结局：{}\n".format(self.end_t.name))
             f.write("------------------------------------\n")
             f.close()
-        if not os.path.exists('pic'):
-            os.mkdir("pic")
+        if not os.path.exists('../pic'):
+            os.mkdir("../pic")
         screenshot = QApplication.primaryScreen().grabWindow(self.winId())
         screenshot.save('pic/{}.png'.format(save_time+NickName))
 
