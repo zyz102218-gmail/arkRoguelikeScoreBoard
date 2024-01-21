@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1732</width>
-    <height>1302</height>
+    <width>1872</width>
+    <height>994</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -54,7 +54,7 @@
     <widget class="QComboBox" name="canSchool">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>30</x>
        <y>70</y>
        <width>261</width>
        <height>41</height>
@@ -124,18 +124,25 @@
    <widget class="QTextBrowser" name="score_log">
     <property name="geometry">
      <rect>
-      <x>1290</x>
-      <y>70</y>
-      <width>401</width>
-      <height>851</height>
+      <x>1550</x>
+      <y>110</y>
+      <width>301</width>
+      <height>811</height>
      </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>1290</x>
-      <y>30</y>
+      <x>1550</x>
+      <y>40</y>
       <width>221</width>
       <height>41</height>
      </rect>
@@ -155,8 +162,8 @@
      <rect>
       <x>10</x>
       <y>160</y>
-      <width>741</width>
-      <height>451</height>
+      <width>1011</width>
+      <height>321</height>
      </rect>
     </property>
     <property name="font">
@@ -204,6 +211,12 @@
       <property name="text">
        <string>巍峨银松</string>
       </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
      </widget>
      <widget class="QRadioButton" name="end_two">
       <property name="geometry">
@@ -231,7 +244,7 @@
        <x>220</x>
        <y>40</y>
        <width>231</width>
-       <height>121</height>
+       <height>131</height>
       </rect>
      </property>
      <property name="font">
@@ -266,7 +279,7 @@
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>70</y>
+        <y>60</y>
         <width>171</width>
         <height>31</height>
        </rect>
@@ -281,12 +294,31 @@
        <string>虚无之偶</string>
       </property>
      </widget>
+     <widget class="QRadioButton" name="end_no_plus">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>无</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QGroupBox" name="end_three">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>180</y>
+       <y>170</y>
        <width>441</width>
        <height>91</height>
       </rect>
@@ -342,8 +374,8 @@
     <widget class="QGroupBox" name="end_four">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>290</y>
+       <x>470</x>
+       <y>170</y>
        <width>441</width>
        <height>91</height>
       </rect>
@@ -400,7 +432,7 @@
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>400</y>
+       <y>270</y>
        <width>441</width>
        <height>31</height>
       </rect>
@@ -420,8 +452,8 @@
       <rect>
        <x>470</x>
        <y>40</y>
-       <width>261</width>
-       <height>231</height>
+       <width>531</width>
+       <height>121</height>
       </rect>
      </property>
      <property name="font">
@@ -438,7 +470,7 @@
        <rect>
         <x>20</x>
         <y>30</y>
-        <width>201</width>
+        <width>111</width>
         <height>41</height>
        </rect>
       </property>
@@ -457,7 +489,7 @@
        <rect>
         <x>20</x>
         <y>70</y>
-        <width>201</width>
+        <width>111</width>
         <height>41</height>
        </rect>
       </property>
@@ -474,8 +506,8 @@
      <widget class="QCheckBox" name="end_collectible_tansuo">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>110</y>
+        <x>310</x>
+        <y>30</y>
         <width>201</width>
         <height>41</height>
        </rect>
@@ -493,9 +525,9 @@
      <widget class="QCheckBox" name="end_collectible_kongjian">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>150</y>
-        <width>201</width>
+        <x>150</x>
+        <y>30</y>
+        <width>111</width>
         <height>41</height>
        </rect>
       </property>
@@ -515,9 +547,9 @@
      <widget class="QCheckBox" name="end_collectible_shendu">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>190</y>
-        <width>201</width>
+        <x>150</x>
+        <y>70</y>
+        <width>111</width>
         <height>41</height>
        </rect>
       </property>
@@ -535,8 +567,8 @@
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>480</x>
-       <y>290</y>
+       <x>470</x>
+       <y>270</y>
        <width>161</width>
        <height>41</height>
       </rect>
@@ -554,10 +586,10 @@
     <widget class="QLabel" name="end_score_ssum">
      <property name="geometry">
       <rect>
-       <x>480</x>
-       <y>340</y>
+       <x>650</x>
+       <y>270</y>
        <width>231</width>
-       <height>91</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -576,10 +608,10 @@
    <widget class="QGroupBox" name="backpak">
     <property name="geometry">
      <rect>
-      <x>780</x>
+      <x>1030</x>
       <y>160</y>
-      <width>471</width>
-      <height>451</height>
+      <width>511</width>
+      <height>321</height>
      </rect>
     </property>
     <property name="font">
@@ -727,9 +759,9 @@
     <widget class="QGroupBox" name="collectible">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>250</y>
-       <width>241</width>
+       <x>270</x>
+       <y>60</y>
+       <width>231</width>
        <height>171</height>
       </rect>
      </property>
@@ -777,7 +809,7 @@
      <widget class="QSpinBox" name="special_collectible_count">
       <property name="geometry">
        <rect>
-        <x>140</x>
+        <x>110</x>
         <y>50</y>
         <width>81</width>
         <height>22</height>
@@ -793,7 +825,7 @@
      <widget class="QSpinBox" name="normal_collectible_count">
       <property name="geometry">
        <rect>
-        <x>140</x>
+        <x>110</x>
         <y>100</y>
         <width>81</width>
         <height>22</height>
@@ -810,15 +842,31 @@
     <widget class="QGroupBox" name="secretspoke">
      <property name="geometry">
       <rect>
-       <x>270</x>
-       <y>60</y>
-       <width>191</width>
-       <height>171</height>
+       <x>260</x>
+       <y>230</y>
+       <width>241</width>
+       <height>81</height>
       </rect>
      </property>
      <property name="title">
       <string>密文板宣告</string>
      </property>
+     <widget class="QSpinBox" name="secretspoke_times">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>40</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
@@ -838,28 +886,12 @@
        <string>次数</string>
       </property>
      </widget>
-     <widget class="QSpinBox" name="secretspoke_times">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>90</y>
-        <width>151</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>黑体</family>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-     </widget>
     </widget>
     <widget class="QLabel" name="label_11">
      <property name="geometry">
       <rect>
-       <x>270</x>
-       <y>260</y>
+       <x>20</x>
+       <y>250</y>
        <width>161</width>
        <height>41</height>
       </rect>
@@ -877,10 +909,10 @@
     <widget class="QLabel" name="backpak_score_ssum">
      <property name="geometry">
       <rect>
-       <x>270</x>
-       <y>310</y>
-       <width>181</width>
-       <height>91</height>
+       <x>150</x>
+       <y>240</y>
+       <width>81</width>
+       <height>51</height>
       </rect>
      </property>
      <property name="font">
@@ -896,13 +928,13 @@
      </property>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox">
+   <widget class="QGroupBox" name="emergact">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>620</y>
-      <width>741</width>
-      <height>301</height>
+      <y>500</y>
+      <width>1111</width>
+      <height>201</height>
      </rect>
     </property>
     <property name="font">
@@ -914,26 +946,7 @@
     <property name="title">
      <string>紧急作战</string>
     </property>
-    <widget class="QLabel" name="label_12">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>250</y>
-       <width>471</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>黑体</family>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>本框内按钮点击即加，在计分事件中显示，可撤销</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="emeract_binghai">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -952,7 +965,7 @@
       <string>冰海疑影</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="emeract_jiaoshou">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -971,7 +984,7 @@
       <string>狡兽九窟</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="emeract_gongsi">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -990,7 +1003,7 @@
       <string>公司纠葛</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="emeract_renzao">
      <property name="geometry">
       <rect>
        <x>200</x>
@@ -1009,7 +1022,7 @@
       <string>人造物狂欢节</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="emeract_benneng">
      <property name="geometry">
       <rect>
        <x>200</x>
@@ -1028,7 +1041,7 @@
       <string>本能污染</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_6">
+    <widget class="QPushButton" name="emeract_wangzhe">
      <property name="geometry">
       <rect>
        <x>200</x>
@@ -1047,11 +1060,11 @@
       <string>亡者行军</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_7">
+    <widget class="QPushButton" name="emeract_tansuo">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>190</y>
+       <x>890</x>
+       <y>40</y>
        <width>161</width>
        <height>41</height>
       </rect>
@@ -1066,11 +1079,11 @@
       <string>坍缩体的午后</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_8">
+    <widget class="QPushButton" name="emeract_yueli">
      <property name="geometry">
       <rect>
-       <x>200</x>
-       <y>190</y>
+       <x>890</x>
+       <y>90</y>
        <width>161</width>
        <height>41</height>
       </rect>
@@ -1085,7 +1098,7 @@
       <string>乐理之灾</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_9">
+    <widget class="QPushButton" name="emeract_hunluan">
      <property name="geometry">
       <rect>
        <x>370</x>
@@ -1104,7 +1117,7 @@
       <string>混乱的表象</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_10">
+    <widget class="QPushButton" name="emeract_qiudi">
      <property name="geometry">
       <rect>
        <x>370</x>
@@ -1123,11 +1136,11 @@
       <string>求敌得敌</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_11">
+    <widget class="QPushButton" name="emeract_hechu">
      <property name="geometry">
       <rect>
-       <x>370</x>
-       <y>140</y>
+       <x>720</x>
+       <y>40</y>
        <width>161</width>
        <height>41</height>
       </rect>
@@ -1142,11 +1155,11 @@
       <string>何处无山海</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_12">
+    <widget class="QPushButton" name="emeract_shengren">
      <property name="geometry">
       <rect>
-       <x>370</x>
-       <y>190</y>
+       <x>720</x>
+       <y>90</y>
        <width>161</width>
        <height>41</height>
       </rect>
@@ -1161,7 +1174,7 @@
       <string>生人勿近</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_13">
+    <widget class="QPushButton" name="emeract_shuangyu">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -1180,7 +1193,7 @@
       <string>霜与沙</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_14">
+    <widget class="QPushButton" name="emeract_shengling">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -1202,7 +1215,7 @@
     <widget class="QLabel" name="label_13">
      <property name="geometry">
       <rect>
-       <x>550</x>
+       <x>400</x>
        <y>140</y>
        <width>171</width>
        <height>51</height>
@@ -1218,11 +1231,11 @@
       <string>五、六层紧急无漏</string>
      </property>
     </widget>
-    <widget class="QSpinBox" name="spinBox">
+    <widget class="QSpinBox" name="emeract_fivesix_count">
      <property name="geometry">
       <rect>
-       <x>550</x>
-       <y>200</y>
+       <x>590</x>
+       <y>150</y>
        <width>161</width>
        <height>21</height>
       </rect>
@@ -1235,13 +1248,13 @@
      </property>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox_3">
+   <widget class="QGroupBox" name="roadmapact">
     <property name="geometry">
      <rect>
-      <x>780</x>
-      <y>620</y>
-      <width>481</width>
-      <height>301</height>
+      <x>1130</x>
+      <y>500</y>
+      <width>411</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
@@ -1253,31 +1266,12 @@
     <property name="title">
      <string>路网作战</string>
     </property>
-    <widget class="QLabel" name="label_14">
+    <widget class="QPushButton" name="roadmap_binghai">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>250</y>
-       <width>471</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>黑体</family>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>本框内按钮点击即加，在计分事件中显示，可撤销</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_15">
-     <property name="geometry">
-      <rect>
-       <x>90</x>
-       <y>30</y>
-       <width>271</width>
+       <y>50</y>
+       <width>101</width>
        <height>41</height>
       </rect>
      </property>
@@ -1291,12 +1285,12 @@
       <string>冰海疑影</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_16">
+    <widget class="QPushButton" name="roadmap_gongsi">
      <property name="geometry">
       <rect>
-       <x>90</x>
-       <y>90</y>
-       <width>271</width>
+       <x>150</x>
+       <y>50</y>
+       <width>101</width>
        <height>41</height>
       </rect>
      </property>
@@ -1310,12 +1304,12 @@
       <string>公司纠葛</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_17">
+    <widget class="QPushButton" name="roadmap_wangzhe">
      <property name="geometry">
       <rect>
-       <x>90</x>
-       <y>150</y>
-       <width>271</width>
+       <x>270</x>
+       <y>50</y>
+       <width>101</width>
        <height>41</height>
       </rect>
      </property>
@@ -1330,12 +1324,12 @@
      </property>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox_4">
+   <widget class="QGroupBox" name="specialact">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>930</y>
-      <width>1401</width>
+      <x>20</x>
+      <y>710</y>
+      <width>1521</width>
       <height>211</height>
      </rect>
     </property>
@@ -1348,7 +1342,7 @@
     <property name="title">
      <string>特殊作战</string>
     </property>
-    <widget class="QPushButton" name="pushButton_18">
+    <widget class="QPushButton" name="specialact_huxi">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -1367,7 +1361,7 @@
       <string>呼吸</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_19">
+    <widget class="QPushButton" name="specialact_duoshu">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -1386,7 +1380,7 @@
       <string>夺树者</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_20">
+    <widget class="QPushButton" name="specialact_dadi">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -1405,7 +1399,7 @@
       <string>大地醒转</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_21">
+    <widget class="QPushButton" name="specialact_haohua">
      <property name="geometry">
       <rect>
        <x>180</x>
@@ -1424,7 +1418,7 @@
       <string>豪华车队（杀熊）</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_22">
+    <widget class="QPushButton" name="specialact_gengu">
      <property name="geometry">
       <rect>
        <x>180</x>
@@ -1443,11 +1437,11 @@
       <string>亘古仇敌</string>
      </property>
     </widget>
-    <widget class="QGroupBox" name="groupBox_5">
+    <widget class="QGroupBox" name="specialact_huangsha">
      <property name="geometry">
       <rect>
-       <x>400</x>
-       <y>30</y>
+       <x>390</x>
+       <y>20</y>
        <width>391</width>
        <height>81</height>
       </rect>
@@ -1461,7 +1455,7 @@
      <property name="title">
       <string>黄沙幻境</string>
      </property>
-     <widget class="QPushButton" name="pushButton_23">
+     <widget class="QPushButton" name="specialact_huangsha_submit">
       <property name="geometry">
        <rect>
         <x>270</x>
@@ -1474,7 +1468,7 @@
        <string>提交</string>
       </property>
      </widget>
-     <widget class="QCheckBox" name="checkBox">
+     <widget class="QCheckBox" name="specialact_huangsha_wind_check">
       <property name="geometry">
        <rect>
         <x>140</x>
@@ -1510,10 +1504,10 @@
       </property>
      </widget>
     </widget>
-    <widget class="QGroupBox" name="groupBox_6">
+    <widget class="QGroupBox" name="special_noexit">
      <property name="geometry">
       <rect>
-       <x>400</x>
+       <x>390</x>
        <y>120</y>
        <width>391</width>
        <height>80</height>
@@ -1528,7 +1522,7 @@
      <property name="title">
       <string>无漏作战</string>
      </property>
-     <widget class="QPushButton" name="pushButton_24">
+     <widget class="QPushButton" name="special_noexit_chengfa">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -1541,7 +1535,7 @@
        <string>惩罚</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_25">
+     <widget class="QPushButton" name="special_noexit_tiantu">
       <property name="geometry">
        <rect>
         <x>210</x>
@@ -1555,13 +1549,13 @@
       </property>
      </widget>
     </widget>
-    <widget class="QGroupBox" name="groupBox_7">
+    <widget class="QGroupBox" name="specialact_zhengyi">
      <property name="geometry">
       <rect>
        <x>810</x>
-       <y>30</y>
-       <width>581</width>
-       <height>81</height>
+       <y>20</y>
+       <width>301</width>
+       <height>171</height>
       </rect>
      </property>
      <property name="font">
@@ -1580,7 +1574,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>30</y>
+        <y>50</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -1592,11 +1586,11 @@
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QCheckBox" name="checkBox_4">
+     <widget class="QCheckBox" name="specialact_zhengyi_wulou">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>30</y>
+        <x>10</x>
+        <y>110</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -1605,25 +1599,12 @@
        <string>无漏</string>
       </property>
      </widget>
-     <widget class="QCheckBox" name="checkBox_5">
+     <widget class="QPushButton" name="specialact_zhengyi_sumbit">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>30</y>
-        <width>161</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>击杀鸭/狗/熊</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_26">
-      <property name="geometry">
-       <rect>
-        <x>450</x>
-        <y>30</y>
-        <width>101</width>
+        <x>130</x>
+        <y>110</y>
+        <width>141</width>
         <height>31</height>
        </rect>
       </property>
@@ -1631,14 +1612,37 @@
        <string>提交</string>
       </property>
      </widget>
+     <widget class="QSpinBox" name="specialact_zhengyi_killed_count">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>60</y>
+        <width>141</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>击杀鸭狗熊数量</string>
+      </property>
+     </widget>
     </widget>
-    <widget class="QGroupBox" name="groupBox_8">
+    <widget class="QGroupBox" name="specialact_yingxiong">
      <property name="geometry">
       <rect>
-       <x>810</x>
-       <y>120</y>
-       <width>581</width>
-       <height>81</height>
+       <x>1130</x>
+       <y>20</y>
+       <width>341</width>
+       <height>161</height>
       </rect>
      </property>
      <property name="font">
@@ -1648,7 +1652,7 @@
       </font>
      </property>
      <property name="title">
-      <string>正义使者</string>
+      <string>英雄无名</string>
      </property>
      <widget class="QCheckBox" name="checkBox_9">
       <property name="enabled">
@@ -1657,7 +1661,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>30</y>
+        <y>50</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -1669,11 +1673,11 @@
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QCheckBox" name="checkBox_10">
+     <widget class="QCheckBox" name="specialact_yingxiong_noexit">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>30</y>
+        <x>10</x>
+        <y>110</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -1682,11 +1686,11 @@
        <string>无漏</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_28">
+     <widget class="QPushButton" name="specialact_yingxiong_submit">
       <property name="geometry">
        <rect>
-        <x>450</x>
-        <y>30</y>
+        <x>140</x>
+        <y>110</y>
         <width>101</width>
         <height>31</height>
        </rect>
@@ -1695,11 +1699,11 @@
        <string>提交</string>
       </property>
      </widget>
-     <widget class="QSpinBox" name="spinBox_2">
+     <widget class="QSpinBox" name="specialact_yingxiong_kill_count">
       <property name="geometry">
        <rect>
-        <x>320</x>
-        <y>30</y>
+        <x>220</x>
+        <y>50</y>
         <width>111</width>
         <height>31</height>
        </rect>
@@ -1708,8 +1712,8 @@
      <widget class="QLabel" name="label_15">
       <property name="geometry">
        <rect>
-        <x>240</x>
-        <y>30</y>
+        <x>140</x>
+        <y>50</y>
         <width>71</width>
         <height>31</height>
        </rect>
@@ -1720,13 +1724,13 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox_9">
+   <widget class="QGroupBox" name="touzi">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>1150</y>
-      <width>1401</width>
-      <height>91</height>
+      <x>1130</x>
+      <y>620</y>
+      <width>411</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="font">
@@ -1757,6 +1761,206 @@
       <string>取钱数</string>
      </property>
     </widget>
+    <widget class="QSpinBox" name="touzi_get_count">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>40</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="maximum">
+      <number>9999999</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>30</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>折合扣分</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="touzi_get_score_sum">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>40</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>000</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>30</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>总分</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="score_sum">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>20</y>
+      <width>91</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>000</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_save">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>30</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>保存</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_retract">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>30</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>撤销一步</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_remake">
+    <property name="geometry">
+     <rect>
+      <x>1310</x>
+      <y>30</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>重开</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>89</y>
+      <width>741</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>核心干员控制</string>
+    </property>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>未抓取核心干员数</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="no_core_operator_count">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>40</y>
+       <width>131</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -1764,7 +1968,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1732</width>
+     <width>1872</width>
      <height>23</height>
     </rect>
    </property>
