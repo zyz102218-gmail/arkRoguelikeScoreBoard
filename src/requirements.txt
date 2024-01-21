@@ -2,7 +2,6 @@
 PyQt5
 pyqt5-plugins
 PyQt5-Qt5
-PyQt5-sip
 pyqt5-tools
 pywin32-ctypes==0.2.2
 qt5-applications==5.15.2.2.3
