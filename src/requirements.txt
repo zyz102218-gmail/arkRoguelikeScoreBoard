@@ -5,4 +5,4 @@ PyQt5-Qt5
 pyqt5-tools
 pywin32-ctypes==0.2.2
 qt5-applications==5.15.2.2.3
-qt5-tools==5.15.2.1.3
+
