@@ -24,6 +24,7 @@ jobs:
           name: windows_x64
           path: src/dist
       - name: Upload to release
+        id: create_release
         uses: actions/create-release@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
