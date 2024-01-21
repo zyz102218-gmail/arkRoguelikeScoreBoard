@@ -23,7 +23,11 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: windows_x64
-          path: src/dist/windows
+          path: src/dist
+      - uses: actions/upload-artifact@v2
+        with:
+          name: windows_x64
+          path: dist
 #      - name: Setup Python
 #        uses: actions/setup-python@v4
 #        with:
