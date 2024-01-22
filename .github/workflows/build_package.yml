@@ -11,7 +11,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@master
-      - name: Upload to release # 得先干，linux的build更快，需要先创建好release
+      - name: Upload to release # 得先干，linux的build更快，需要先做
         id: create_release
         uses: actions/create-release@master
         env:
@@ -66,11 +66,7 @@ jobs:
         id: get_release
         uses: joutvhu/get-release@v1.0.3
         with:
-          latest: true
-          # Tag name start with `v`
-          pattern: '^v.*'
-          # Including pre-release
-          prerelease: true
+          tag_name: ${{ github.ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload Release Asset
@@ -81,6 +77,40 @@ jobs:
           upload_url: ${{ steps.get_release.outputs.upload_url }}
           asset_path: arkRoguelikeScoreBoard-ubuntu-x86_64.tar.gz
           asset_name: arkRoguelikeScoreBoard-ubuntu-x86_64.tar.gz
+          asset_content_type: application/zip
+  build-macos:
+    runs-on: macos-latest-xlarge # macos Apple Silicon
+    steps:
+      - uses: actions/checkout@master
+      - name: Prepare Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+          architecture: "arm64"
+      - name: Prepare depencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r src/requirements.txt
+          pip install pyinstaller
+      - name: Package Application
+        run: |
+          pyinstaller -F --noconsole src/main.py -n arkRoguelikeScoreBoard
+          tar -czvf arkRoguelikeScoreBoard-macos-arm64.tar.gz dist
+      - name: Get current release
+        id: get_release
+        uses: joutvhu/get-release@v1.0.3
+        with:
+          tag_name: ${{ github.ref }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.get_release.outputs.upload_url }}
+          asset_path: arkRoguelikeScoreBoard-macos-arm64.tar.gz
+          asset_name: arkRoguelikeScoreBoard-macos-arm64.tar.gz
           asset_content_type: application/zip
 #      - name: Setup Python
 #        uses: actions/setup-python@v4
