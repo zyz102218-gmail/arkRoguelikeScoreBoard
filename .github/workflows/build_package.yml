@@ -104,7 +104,11 @@ jobs:
         id: get_release
         uses: joutvhu/get-release@v1.0.3
         with:
-          tag_name: ${{ github.ref }}
+          latest: true
+          # Tag name start with `v`
+          pattern: '^v.*'
+          # Including pre-release
+          prerelease: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload Release Asset
