@@ -13,6 +13,8 @@ jobs:
       - name: Get current release
         id: get_release
         uses: joutvhu/get-release@v1.0.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           latest: true
           # Tag name start with `v`
