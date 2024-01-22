@@ -59,8 +59,8 @@ jobs:
             pip install pyinstaller
         - name: Package Application
           run: |
-          pyinstaller -F --noconsole src/main.py -n arkRoguelikeScoreBoard
-          tar -czvf arkRoguelikeScoreBoard-ubuntu-x86_64.tar.gz dist
+            pyinstaller -F --noconsole src/main.py -n arkRoguelikeScoreBoard
+            tar -czvf arkRoguelikeScoreBoard-ubuntu-x86_64.tar.gz dist
         - name: Upload Release Asset
           uses: actions/upload-release-asset@master
           env:
