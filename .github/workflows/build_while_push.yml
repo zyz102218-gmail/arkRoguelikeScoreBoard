@@ -10,13 +10,13 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@master
-      - name: Get current release
+      - name: Get current pre-release
         id: get_release
         uses: joutvhu/get-release@v1.0.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          latest: true
+          tag_name: PRE_Release
           # Tag name start with `v`
           pattern: '^v.*'
           # Including pre-release
@@ -61,17 +61,17 @@ jobs:
         run: |
           pyinstaller -F --noconsole src/main.py -n arkRoguelikeScoreBoard
           tar -czvf arkRoguelikeScoreBoard-ubuntu-x86_64.tar.gz dist
-      - name: Get current release
+      - name: Get current pre-release
         id: get_release
         uses: joutvhu/get-release@v1.0.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          latest: true
+          tag_name: PRE_Release
           # Tag name start with `v`
           pattern: '^v.*'
           # Including pre-release
           prerelease: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload Release Asset
         uses: actions/upload-release-asset@master
         env:
@@ -99,17 +99,17 @@ jobs:
         run: |
           pyinstaller -F --noconsole src/main.py -n arkRoguelikeScoreBoard
           tar -czvf arkRoguelikeScoreBoard-macos-arm64.tar.gz dist
-      - name: Get current release
+      - name: Get current pre-release
         id: get_release
         uses: joutvhu/get-release@v1.0.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          latest: true
+          tag_name: PRE_Release
           # Tag name start with `v`
           pattern: '^v.*'
           # Including pre-release
           prerelease: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload Release Asset
         uses: actions/upload-release-asset@master
         env:
