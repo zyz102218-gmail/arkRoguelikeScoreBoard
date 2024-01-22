@@ -61,12 +61,19 @@ jobs:
         run: |
           pyinstaller -F --noconsole src/main.py -n arkRoguelikeScoreBoard
           tar -czvf arkRoguelikeScoreBoard-ubuntu-x86_64.tar.gz dist
+      - name: Get current release
+        id: get_release
+        uses: joutvhu/get-release@v1.0.3
+        with:
+          tag_name: ${{ github.ref }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload Release Asset
         uses: actions/upload-release-asset@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ jobs.build-windows.steps.create_release.outputs.upload_url }}
+          upload_url: ${{ steps.get_release.outputs.upload_url }}
           asset_path: arkRoguelikeScoreBoard-ubuntu-x86_64.tar.gz
           asset_name: arkRoguelikeScoreBoard-ubuntu-x86_64.tar.gz
           asset_content_type: application/zip
