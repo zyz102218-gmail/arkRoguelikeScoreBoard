@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import QMainWindow, QMessageBox, QApplication
 
 from PyQt5.QtGui import QImage,QPixmap,QIcon
 
-from mainwindow import Ui_MainWindow
+from src.mainwindow import Ui_MainWindow
 
 from datetime import datetime
 
