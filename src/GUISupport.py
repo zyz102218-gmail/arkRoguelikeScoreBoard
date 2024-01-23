@@ -342,6 +342,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             score = 50
         elif role_name in ['生灵的终点']:
             score = 130
+        else:
+            raise ValueError("路网作战role_name不合法{}".format(role_name))
         action = NormalScoreAction("路网作战{}".format(role_name), score,
                                    description="路网作战{:}+{:d}".format(role_name, score))
         action.set_timestamp(datetime.strftime(datetime.now(), "%Y-%m-%d %H-%M-%S"))

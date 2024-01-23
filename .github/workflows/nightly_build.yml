@@ -1,27 +1,25 @@
-name: Build package
+name: Build package nightly
 
 on:
-  push:
-    # Sequence of patterns matched against refs/tags
-    tags:
-      - "v*" # Push events to matching v*, i.e. v1.0, v20.15.10
+  # This can be used to automatically publish nightlies at UTC nighttime
+  schedule:
+    - cron: '0 20 * * *' # run at 8 PM UTC, 4 AM CST
 jobs:
   build-windows:
-
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@master
-      - name: Upload to release # 得先干，linux的build更快，需要先做
-        id: create_release
-        uses: actions/create-release@master
+      - uses: liudonghua123/delete-release-action@v1
+        with:
+          release_name: 'Nightly_Release'
+      - name: Get current pre-release
+        id: get_release
+        uses: joutvhu/get-release@v1.0.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: TODO New Release.
-          draft: false
-          prerelease: false
+          tag_name: Nightly_Release
+          # Tag name start with `v`
       - name: Prepare Python
         uses: actions/setup-python@v4
         with:
@@ -40,7 +38,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          upload_url: ${{ steps.get_release.outputs.upload_url }}
           asset_path: dist/arkRoguelikeScoreBoard.exe
           asset_name: arkRoguelikeScoreBoard-win_x86-64.exe
           asset_content_type: application/exe
@@ -62,17 +60,14 @@ jobs:
         run: |
           pyinstaller -F --noconsole src/main.py -n arkRoguelikeScoreBoard
           tar -czvf arkRoguelikeScoreBoard-ubuntu-x86_64.tar.gz dist
-      - name: Get current release
+      - name: Get current pre-release
         id: get_release
         uses: joutvhu/get-release@v1.0.3
-        with:
-          latest: true
-          # Tag name start with `v`
-          pattern: '^v.*'
-          # Including pre-release
-          prerelease: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: PRE_Release
+          # Tag name start with `v`
       - name: Upload Release Asset
         uses: actions/upload-release-asset@master
         env:
@@ -100,17 +95,13 @@ jobs:
         run: |
           pyinstaller -F --noconsole src/main.py -n arkRoguelikeScoreBoard
           tar -czvf arkRoguelikeScoreBoard-macos-arm64.tar.gz dist
-      - name: Get current release
+      - name: Get current pre-release
         id: get_release
         uses: joutvhu/get-release@v1.0.3
-        with:
-          latest: true
-          # Tag name start with `v`
-          pattern: '^v.*'
-          # Including pre-release
-          prerelease: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: PRE_Release
       - name: Upload Release Asset
         uses: actions/upload-release-asset@master
         env:
