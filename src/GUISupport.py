@@ -415,7 +415,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def log_gen(self):
         if hash(str(self.shijian)) == self.shijian_hash:
             return
-        long_str = "时间（H-M-S）\t事件\t\t分数\n"
+        long_str = "时间\t事件\t\t分数\n"
         for act in self.shijian:
             small_str = "{}\t {}\t {}\n".format(act.time.split()[1],act.name,act.small_score)
             long_str+=small_str

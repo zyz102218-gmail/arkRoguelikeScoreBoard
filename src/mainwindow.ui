@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1476</width>
+    <width>1526</width>
     <height>756</height>
    </rect>
   </property>
@@ -25,7 +25,7 @@
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
+      <family>Adobe 黑体 Std R</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -36,14 +36,14 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>20</y>
+       <y>30</y>
        <width>41</width>
        <height>21</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -62,7 +62,7 @@
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -89,14 +89,14 @@
      <property name="geometry">
       <rect>
        <x>280</x>
-       <y>20</y>
+       <y>30</y>
        <width>51</width>
        <height>21</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -115,7 +115,7 @@
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -124,32 +124,37 @@
    <widget class="QTextBrowser" name="score_log">
     <property name="geometry">
      <rect>
-      <x>1160</x>
+      <x>1140</x>
       <y>90</y>
-      <width>301</width>
+      <width>371</width>
       <height>611</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+     </font>
     </property>
     <property name="html">
      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'黑体'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>1160</x>
-      <y>30</y>
+      <x>1140</x>
+      <y>40</y>
       <width>221</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
+      <family>Adobe 黑体 Std R</family>
       <pointsize>20</pointsize>
      </font>
     </property>
@@ -168,7 +173,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
+      <family>Adobe 黑体 Std R</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -186,7 +191,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -197,14 +202,14 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>20</y>
+        <y>30</y>
         <width>101</width>
         <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -222,14 +227,14 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>50</y>
+        <y>60</y>
         <width>101</width>
         <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -249,7 +254,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -267,7 +272,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -286,7 +291,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -305,7 +310,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -325,7 +330,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -343,7 +348,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -362,7 +367,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -382,7 +387,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -400,7 +405,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -419,7 +424,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -439,7 +444,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -458,7 +463,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -476,7 +481,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -495,7 +500,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -514,7 +519,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -533,7 +538,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -555,7 +560,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -567,15 +572,15 @@ p, li { white-space: pre-wrap; }
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>390</x>
+       <x>400</x>
        <y>170</y>
-       <width>161</width>
+       <width>101</width>
        <height>41</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -586,7 +591,7 @@ p, li { white-space: pre-wrap; }
     <widget class="QLabel" name="end_score_ssum">
      <property name="geometry">
       <rect>
-       <x>540</x>
+       <x>530</x>
        <y>170</y>
        <width>141</width>
        <height>41</height>
@@ -594,7 +599,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
        <weight>50</weight>
        <bold>false</bold>
@@ -616,7 +621,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
+      <family>Adobe 黑体 Std R</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -634,7 +639,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -652,7 +657,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -671,7 +676,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -690,7 +695,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -709,7 +714,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -728,7 +733,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -747,7 +752,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -767,7 +772,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -785,7 +790,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -804,7 +809,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -823,7 +828,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -839,7 +844,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -851,12 +856,12 @@ p, li { white-space: pre-wrap; }
        <x>220</x>
        <y>170</y>
        <width>191</width>
-       <height>61</height>
+       <height>71</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -866,15 +871,15 @@ p, li { white-space: pre-wrap; }
      <widget class="QSpinBox" name="secretspoke_times">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>20</y>
+        <x>60</x>
+        <y>30</y>
         <width>111</width>
         <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -883,14 +888,14 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>20</y>
+        <y>30</y>
         <width>101</width>
         <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -910,7 +915,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -921,15 +926,15 @@ p, li { white-space: pre-wrap; }
     <widget class="QLabel" name="backpak_score_ssum">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>180</y>
+       <x>100</x>
+       <y>170</y>
        <width>81</width>
        <height>51</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
        <weight>50</weight>
        <bold>false</bold>
@@ -951,7 +956,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
+      <family>Adobe 黑体 Std R</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -969,7 +974,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -988,7 +993,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1007,7 +1012,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1026,7 +1031,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1045,7 +1050,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1064,7 +1069,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1083,7 +1088,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1102,7 +1107,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1121,7 +1126,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1140,7 +1145,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1159,7 +1164,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1178,7 +1183,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1197,7 +1202,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1216,7 +1221,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1235,7 +1240,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1254,7 +1259,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1271,7 +1276,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
+      <family>Adobe 黑体 Std R</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -1289,7 +1294,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1308,7 +1313,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1327,7 +1332,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1342,12 +1347,12 @@ p, li { white-space: pre-wrap; }
       <x>10</x>
       <y>510</y>
       <width>1131</width>
-      <height>191</height>
+      <height>201</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
+      <family>Adobe 黑体 Std R</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -1358,14 +1363,14 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>20</y>
+       <y>30</y>
        <width>100</width>
        <height>30</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1377,14 +1382,14 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>50</y>
+       <y>60</y>
        <width>100</width>
        <height>30</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1396,14 +1401,14 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>80</y>
+       <y>90</y>
        <width>100</width>
        <height>30</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1415,14 +1420,14 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>110</y>
+       <y>120</y>
        <width>151</width>
        <height>30</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1434,14 +1439,14 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>140</y>
+       <y>150</y>
        <width>100</width>
        <height>30</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1453,14 +1458,14 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>280</x>
-       <y>10</y>
+       <y>20</y>
        <width>391</width>
-       <height>61</height>
+       <height>71</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -1471,14 +1476,14 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>220</x>
-        <y>20</y>
+        <y>30</y>
         <width>111</width>
         <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -1490,14 +1495,14 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>110</x>
-        <y>20</y>
+        <y>30</y>
         <width>131</width>
         <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -1512,14 +1517,14 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>20</y>
+        <y>30</y>
         <width>151</width>
         <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -1538,14 +1543,14 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>690</x>
-       <y>10</y>
+       <y>20</y>
        <width>121</width>
-       <height>161</height>
+       <height>171</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -1556,14 +1561,14 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>50</y>
+        <y>60</y>
         <width>100</width>
         <height>30</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -1575,14 +1580,14 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>100</y>
+        <y>110</y>
         <width>100</width>
         <height>30</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -1595,14 +1600,14 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>280</x>
-       <y>70</y>
+       <y>90</y>
        <width>391</width>
        <height>101</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -1621,6 +1626,12 @@ p, li { white-space: pre-wrap; }
         <height>31</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Adobe 黑体 Std R</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>完成</string>
       </property>
@@ -1637,6 +1648,12 @@ p, li { white-space: pre-wrap; }
         <height>31</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Adobe 黑体 Std R</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>无漏</string>
       </property>
@@ -1649,6 +1666,12 @@ p, li { white-space: pre-wrap; }
         <width>141</width>
         <height>31</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe 黑体 Std R</family>
+        <pointsize>14</pointsize>
+       </font>
       </property>
       <property name="text">
        <string>提交</string>
@@ -1663,6 +1686,12 @@ p, li { white-space: pre-wrap; }
         <height>22</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Adobe 黑体 Std R</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
      </widget>
      <widget class="QLabel" name="label_14">
       <property name="geometry">
@@ -1673,6 +1702,12 @@ p, li { white-space: pre-wrap; }
         <height>31</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Adobe 黑体 Std R</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>击杀鸭狗熊数量</string>
       </property>
@@ -1682,14 +1717,14 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>820</x>
-       <y>10</y>
+       <y>20</y>
        <width>281</width>
-       <height>151</height>
+       <height>171</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -1703,10 +1738,16 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>50</y>
+        <y>60</y>
         <width>131</width>
         <height>31</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe 黑体 Std R</family>
+        <pointsize>14</pointsize>
+       </font>
       </property>
       <property name="text">
        <string>完成</string>
@@ -1719,10 +1760,16 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>90</y>
+        <y>120</y>
         <width>81</width>
         <height>31</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe 黑体 Std R</family>
+        <pointsize>14</pointsize>
+       </font>
       </property>
       <property name="text">
        <string>无漏</string>
@@ -1732,10 +1779,16 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>160</x>
-        <y>90</y>
+        <y>120</y>
         <width>101</width>
         <height>31</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe 黑体 Std R</family>
+        <pointsize>14</pointsize>
+       </font>
       </property>
       <property name="text">
        <string>提交</string>
@@ -1745,14 +1798,14 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>150</x>
-        <y>50</y>
+        <y>60</y>
         <width>111</width>
         <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -1761,14 +1814,14 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>50</y>
+        <y>60</y>
         <width>71</width>
         <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>黑体</family>
+        <family>Adobe 黑体 Std R</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -1789,7 +1842,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
+      <family>Adobe 黑体 Std R</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -1807,7 +1860,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1826,7 +1879,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1845,7 +1898,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1864,7 +1917,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1884,7 +1937,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
+      <family>Adobe 黑体 Std R</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -1903,7 +1956,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
+      <family>Adobe 黑体 Std R</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -1922,7 +1975,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
+      <family>Adobe 黑体 Std R</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -1941,7 +1994,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
+      <family>Adobe 黑体 Std R</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -1960,7 +2013,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
+      <family>Adobe 黑体 Std R</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -1979,7 +2032,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
+      <family>Adobe 黑体 Std R</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -1997,7 +2050,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -2016,7 +2069,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>黑体</family>
+       <family>Adobe 黑体 Std R</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -2028,12 +2081,31 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1476</width>
+     <width>1526</width>
      <height>23</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionff"/>
+    <addaction name="separator"/>
+    <addaction name="actionabout"/>
+   </widget>
+   <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionff">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionabout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
