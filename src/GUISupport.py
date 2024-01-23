@@ -128,6 +128,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.button_retract.pressed.connect(self.retract_last_do)
         self.button_save.pressed.connect(self.save_one)
         self.button_save.setStatusTip("保存当前存储的信息，必须在填写昵称且完赛后再点击保存。")
+        self.button_save.setShortcut("ctrl+S")
         self.button_remake.pressed.connect(self.clear_all)
         self.button_remake.setStatusTip("清除已填写的所有信息和已添加的所有事件")
 
@@ -167,6 +168,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.specialact_huangsha_submit.pressed.connect(self.special_huangsha)
         self.specialact_zhengyi_sumbit.pressed.connect(self.special_zhengyi)
         self.specialact_yingxiong_submit.pressed.connect(self.special_hero)
+
+        self.action_save.triggered.connect(self.save_one)
+        self.action_about.triggered.connect(self.show_about)
 
     def retract_last_do(self) -> None:
         """
@@ -252,6 +256,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.end_t.set_name(end_name)
         self.end_t.set_description(end_des)
 
+    def show_about(self):
+        QMessageBox.information(self,"关于","Dill Zhu(zyz102218@gmail.com)\nhttps://github.com/zyz102218-gmail/arkRoguelikeScoreBoard",QMessageBox.Ok)
     def cac_experience_score(self):
         exp_score = 0
         exp_score += int(self.tempcall_six_count.text()) * 50 \
