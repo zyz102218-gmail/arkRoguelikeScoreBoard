@@ -141,7 +141,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.emeract_benneng.pressed.connect(lambda: self.emergency_add_score(self.emeract_benneng.text()))
         self.emeract_wangzhe.pressed.connect(lambda: self.emergency_add_score(self.emeract_wangzhe.text()))
         self.emeract_hunluan.pressed.connect(lambda: self.emergency_add_score(self.emeract_hunluan.text()))
-        self.emeract_qiudi.pressed.connect(lambda: self.emergency_add_score(self.emeract_hunluan.text()))
+        self.emeract_qiudi.pressed.connect(lambda: self.emergency_add_score(self.emeract_qiudi.text()))
         self.emeract_shuangyu.pressed.connect(lambda: self.emergency_add_score(self.emeract_shuangyu.text()))
         self.emeract_shengling.pressed.connect(lambda: self.emergency_add_score(self.emeract_shengling.text()))
         self.emeract_shengren.pressed.connect(lambda: self.emergency_add_score(self.emeract_shengren.text()))
