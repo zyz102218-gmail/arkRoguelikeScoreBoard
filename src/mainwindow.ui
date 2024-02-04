@@ -1362,7 +1362,7 @@ p, li { white-space: pre-wrap; }
     <widget class="QPushButton" name="specialact_huxi">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>30</x>
        <y>30</y>
        <width>100</width>
        <height>30</height>
@@ -1381,7 +1381,7 @@ p, li { white-space: pre-wrap; }
     <widget class="QPushButton" name="specialact_duoshu">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>30</x>
        <y>60</y>
        <width>100</width>
        <height>30</height>
@@ -1389,7 +1389,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>Adobe 黑体 Std R</family>
+       <family>黑体</family>
        <pointsize>12</pointsize>
       </font>
      </property>
@@ -1400,7 +1400,7 @@ p, li { white-space: pre-wrap; }
     <widget class="QPushButton" name="specialact_dadi">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>30</x>
        <y>90</y>
        <width>100</width>
        <height>30</height>
@@ -1419,7 +1419,7 @@ p, li { white-space: pre-wrap; }
     <widget class="QPushButton" name="specialact_haohua">
      <property name="geometry">
       <rect>
-       <x>50</x>
+       <x>10</x>
        <y>120</y>
        <width>151</width>
        <height>30</height>
@@ -1438,7 +1438,7 @@ p, li { white-space: pre-wrap; }
     <widget class="QPushButton" name="specialact_gengu">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>30</x>
        <y>150</y>
        <width>100</width>
        <height>30</height>
@@ -1829,6 +1829,25 @@ p, li { white-space: pre-wrap; }
        <string>杀敌数</string>
       </property>
      </widget>
+    </widget>
+    <widget class="QPushButton" name="specialact_dark">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>30</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>黑色足迹</string>
+     </property>
     </widget>
    </widget>
    <widget class="QGroupBox" name="touzi">
